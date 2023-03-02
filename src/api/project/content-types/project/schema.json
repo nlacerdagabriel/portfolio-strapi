@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "skills": {
+      "type": "customField",
+      "options": [
+        "ReactJS",
+        "AdonisJS",
+        "PostgreSQL",
+        "Typescript",
+        "RestAPI",
+        "Styled Components"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "url": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    }
+  }
+}
